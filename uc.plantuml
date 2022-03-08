@@ -1,0 +1,20 @@
+@startuml
+
+usecase e1 as "Gérer ses artisans"
+usecase e2 as "Gérer ses chantiers"
+usecase e3 as "Gérer les affectations artisans/chantiers"
+usecase e4 as "Calculer la paye de ses artisans"
+
+actor Entreprise
+
+'Pour aligner les 2 acteurs :
+e1 -[hidden]-> e2
+e2 -[hidden]-> e3
+e3 -[hidden]-> e4
+
+Entreprise -> e1
+Entreprise -> e2
+Entreprise -> e3
+Entreprise -> e4
+
+@enduml
