@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="234px" preserveAspectRatio="none" style="width:534px;height:234px;background:#FFFFFF;" version="1.1" viewBox="0 0 534 234" width="534px" zoomAndPan="magnify"><defs/><g><g id="elem_a"><ellipse cx="323.0935" cy="190.8187" fill="#F1F1F1" rx="109.5935" ry="24.3187" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="185" x="230.5935" y="193.6654">Être affecté à un chantier</text></g><g id="elem_e"><ellipse cx="323.0456" cy="49.5091" fill="#F1F1F1" rx="205.5456" ry="43.5091" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="310" x="165.0456" y="36.9598">Gérer ses artisans (gérer leurs affectations,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="264" x="188.0456" y="53.2567">calculer automatiquement leur paye)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="263.0456" y="69.5536">et ses chantiers</text></g><!--MD5=[11468c77767568c9efff235ac1ebc746]
+entity Artisan--><g id="elem_Artisan"><ellipse cx="153" cy="161.5" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M153,169.5 L153,196.5 M140,177.5 L166,177.5 M153,196.5 L140,211.5 M153,196.5 L166,211.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="127.5" y="225.9951">Artisan</text></g><!--MD5=[4206b647878100e6066f92523e03a5d6]
+entity Entreprise--><g id="elem_Entreprise"><ellipse cx="44" cy="20" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M44,28 L44,55 M31,36 L57,36 M44,55 L31,70 M44,55 L57,70 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76" x="6" y="84.4951">Entreprise</text></g><!--MD5=[6ffb54a9e7189d8af70dc16bfbca9dfd]
+link e to a--><!--MD5=[257eebfdd6c45fe33fcabc714b56f02e]
+link Artisan to a--><g id="link_Artisan_a"><path d="M178.566,191 C188.416,191 198.265,191 208.114,191 " fill="none" id="Artisan-to-a" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="213.264,191,204.264,187,208.264,191,204.264,195,213.264,191" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[dd116758d5f0e7d072673b2019b16e97]
+link Entreprise to e--><g id="link_Entreprise_e"><path d="M82.1445,49.5 C92.1593,49.5 102.1742,49.5 112.189,49.5 " fill="none" id="Entreprise-to-e" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="117.426,49.5,108.426,45.5,112.426,49.5,108.426,53.5,117.426,49.5" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[d5ba5cbfb1ef51a8a851e3fbf9a503ac]
+@startuml
+usecase a as "Être affecté à un chantier"
+usecase e as "Gérer ses artisans (gérer leurs affectations,\ncalculer automatiquement leur paye)\net ses chantiers"
+
+actor Artisan
+actor Entreprise
+
+'Pour aligner les 2 acteurs :
+e -[hidden]-> a
+
+Artisan -> a
+Entreprise -> e
+@enduml
+
+@startuml
+usecase a as "Être affecté à un chantier"
+usecase e as "Gérer ses artisans (gérer leurs affectations,\ncalculer automatiquement leur paye)\net ses chantiers"
+
+actor Artisan
+actor Entreprise
+
+e -[hidden]-> a
+
+Artisan -> a
+Entreprise -> e
+@enduml
+
+PlantUML version 1.2022.2(Sat Mar 05 16:30:19 UTC 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
